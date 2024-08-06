@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helados de Gelatina</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            background-color: #00b6f8;
+            color: #ffffff;
+            padding: 1em 0;
+            font-family: 'Oswald', sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+            background-color: rgb(171, 236, 236);
+        }
+        .product img {
+            max-width: 200px;
+            margin-right: 2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        .tabla-precios img {
+            max-width: 70px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #00b6f8;
+            color: white;
+        }
+        video {
+            width: 100%;
+            margin-top: 2em;
+        }
+        a {
+            color: #00b6f8;
+            text-decoration: none;
+        }
+        a:focus {
+            outline: 2px solid #00b6f8;
+        }
+        button:focus {
+            outline: 2px solid #00b6f8;
+        }
+    </style>
+</head>
+<body>
+    <header tabindex="0" role="banner" aria-labelledby= "titulo-principal titulo-secundario">
+        <h1 id="titulo-principal">Helados de Gelatina</h1>
+        <h2 id="titulo-secundario">Los Mejores Helados con un Toque de Sabor Único</h2>
+    </header>
+    <div class="container">
+        <section tabindex="0" role="article" aria-labelledby="productos descripcion-productos">
+            <h3 id="productos">Nuestros Productos</h3>
+            <p id="descripcion-productos">Descubre la variedad de sabores que tenemos para ofrecerte:</p>
+            <div class="product" tabindex="0" aria-label="Imagen de helado de fresa">
+                <img src="images/helado_fresa.jpg" alt="Helado de Gelatina de Fresa">
+                <div tabindex="0" role="article" aria-labelledby="helado-fresa descripcion-helado-fresa">
+                    <h4 id="helado-fresa">Helado de Fresa</h4>
+                    <p id="descripcion-helado-fresa">Un delicioso helado de gelatina con sabor a fresa que te hará sentir como en verano.</p>
+                </div>
+            </div>
+            <div class="product" tabindex="0" aria-label="Imagen de helado de mango">
+                <img src="images/helado_mango.jpg" alt="Helado de Gelatina de Mango">
+                <div tabindex="0" role="article" aria-labelledby="helado-mango descripcion-helado-mango">
+                    <h4 id="helado-mango">Helado de Mango</h4>
+                    <p id="descripcion-helado-mango">La combinación perfecta de gelatina y mango para un sabor tropical único.</p>
+                </div>
+            </div>
+            <div class="product" tabindex="0" aria-label="Imagen de helado de mango">
+                <img src="images/helado_limón.jpg" alt="Helado de Gelatina de Limón">
+                <div tabindex="0" role="article" aria-labelledby="helado-limon descripcion-helado-limon">
+                    <h4 id="helado-limon">Helado de Limón</h4>
+                    <p id="descripcion-helado-limon">Refrescante y ligero, nuestro helado de gelatina de limón es ideal para los días calurosos.</p>
+                </div>
+            </div>
+        </section>
+        <section tabindex="0" role="article" aria-labelledby="precios">
+            <h3 id="precios">Precios</h3>
+            <table class="tabla-precios">
+                <thead>
+                    <tr>
+                        <th tabindex="0" aria-label="Sabor">Sabor</th>
+                        <th tabindex="0" aria-label="Imagen">Imagen</th>
+                        <th tabindex="0" aria-label="Tamaño Pequeño">Tamaño Pequeño</th>
+                        <th tabindex="0" aria-label="Tamaño Mediano">Tamaño Mediano</th>
+                        <th tabindex="0" aria-label="Tamaño Grande">Tamaño Grande</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td tabindex="0" aria-label="Helado de Fresa">Fresa</td>
+                        <td tabindex="0" aria-label="Imagen de helado de fresa">
+                            <img src="images/helado_fresa.jpg" alt="Helado de Gelatina de Fresa">
+                        <td tabindex="0" aria-label="$2.00">$2.00</td>
+                        <td tabindex="0" aria-label="$3.50">$3.50</td>
+                        <td tabindex="0" aria-label="$5.00">$5.00</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="0" aria-label="Helado de mango">Mango</td>
+                        <td tabindex="0" aria-label="Imagen de helado de mango">
+                            <img src="images/helado_mango.jpg" alt="Helado de Gelatina de mango">
+                        </td>
+                        <td tabindex="0" aria-label="$2.50">$2.50</td>
+                        <td tabindex="0" aria-label="$4.00">$4.00</td>
+                        <td tabindex="0" aria-label="$5.50">$5.50</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="0" aria-label="Helado de limón">Limón</td>
+                        <td tabindex="0" aria-label="Imagen de helado de limón">
+                            <img src="images/helado_limón.jpg" alt="Helado de Gelatina de limón">
+                        </td>
+                        <td tabindex="0" aria-label="$2.00">$2.00</td>
+                        <td tabindex="0" aria-label="$3.50">$3.50</td>
+                        <td tabindex="0" aria-label="$5.00">$5.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section tabindex="0" role="article" aria-labelledby="video-promocional descripcion-video">
+            <h3 id="video-promocional">Video Promocional</h3>
+            <p id="descripcion-video">Disfruta de nuestro video promocional que destaca lo mejor de nuestros helados de gelatina:</p>
+            <video controls tabindex="0">
+                <source src="images/Video Promocional - Mateo Dueñas.mp4" type="video/mp4">
+            </video>
+        </section>
+    </div>
+</body>
+</html>
